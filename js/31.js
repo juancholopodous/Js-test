@@ -6,3 +6,9 @@ boton.addEventListener('click', () => {
         .then(resultado => console.log(`El resultado es ${resultado}` ) )
 })
 
+if(Notification.permission == 'granted') {
+    new Notification( 'Esta es una notificación', {
+        icon: 'img/image.png',
+        body: 'JuanchoUltrapro'
+    })
+}
