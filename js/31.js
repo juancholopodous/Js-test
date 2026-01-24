@@ -1,7 +1,7 @@
 
 const boton = document.querySelector('#boton');
 
-boton.addEventListener('click', () => {
+boton.addEventListener('cli', () => {
     Notification.requestPermission()
         .then(resultado => console.log(`El resultado es ${resultado}` ) )
 })
@@ -12,3 +12,4 @@ if(Notification.permission == 'granted') {
         body: 'JuanchoUltrapro'
     })
 }
+//
